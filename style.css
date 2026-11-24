@@ -69,3 +69,55 @@ body[dir="ltr"] .hero h1{letter-spacing:-4px}body[dir="ltr"] .hero-meta{flex-dir
     grid-template-columns: 1fr;
   }
 }
+
+/* Certificate preview cards */
+
+.certificate-grid a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 13px;
+  min-height: 150px;
+  padding: 18px;
+}
+
+.certificate-file-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 58px;
+  border: 1px solid rgba(45, 175, 235, 0.4);
+  border-radius: 10px;
+  background: rgba(45, 175, 235, 0.12);
+  color: #2DAFEB;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.certificate-thumb {
+  display: block;
+  width: 100%;
+  height: 125px;
+  object-fit: contain;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.certificate-name {
+  color: inherit;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .certificate-grid a {
+    min-height: 125px;
+  }
+
+  .certificate-thumb {
+    height: 150px;
+  }
+}
