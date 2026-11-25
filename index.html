@@ -1,391 +1,526 @@
-
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#081827">
-  <meta name="description" content="الموقع الشخصي لفايزة أحمد — طالبة نظم المعلومات الإدارية، مهتمة بالتقنية والابتكار وتحليل البيانات.">
+  <meta name="theme-color" content="#f5f5f2">
+  <meta name="description" content="الملف الشخصي لفايزة أحمد، طالبة نظم المعلومات الإدارية ومهتمة بالتقنية والبيانات والابتكار.">
   <title>فايزة أحمد | الملف الشخصي</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <div class="site-noise" aria-hidden="true"></div>
+<body data-theme="light">
 
+  <!-- Header -->
   <header class="topbar">
-    <a class="brand" href="#home" aria-label="Faiza home">
-      <span class="brand-mark">FA<span>.</span></span>
-      <span class="brand-caption" data-i18n="brandCaption">مساحة فايزة الرقمية</span>
-    </a>
+    <div class="container nav-container">
 
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#about" data-i18n="navAbout">من أنا</a>
-      <a href="#focus" data-i18n="navFocus">اهتماماتي</a>
-      <a href="#projects" data-i18n="navProjects">مشاريعي</a>
-      <a href="#certificates" data-i18n="navCertificates">الشهادات</a>
-      <a href="#contact" data-i18n="navContact">تواصل</a>
-    </nav>
+      <a href="#home" class="brand">
+        <span class="brand-mark">FA.</span>
+        <span class="brand-caption" data-i18n="brandCaption">مساحة فايزة الرقمية</span>
+      </a>
 
-    <div class="top-actions">
-      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN <span>↗</span></button>
-      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+      <nav class="desktop-nav">
+        <a href="#about" data-i18n="navAbout">من أنا</a>
+        <a href="#focus" data-i18n="navFocus">اهتماماتي</a>
+        <a href="#projects" data-i18n="navProjects">مشاريعي</a>
+        <a href="#certificates" data-i18n="navCertificates">الشهادات</a>
+        <a href="#contact" data-i18n="navContact">تواصل</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="theme-toggle" id="themeToggle"
+          type="button" aria-label="تفعيل الوضع الداكن"
+          title="تفعيل الوضع الداكن">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+
+        <button class="lang-toggle" id="langToggle" type="button">
+          EN <span>↗</span>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle"
+          type="button" aria-label="فتح القائمة" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero section-wrap" id="home">
-      <div class="hero-copy">
-        <div class="eyebrow">
-          <span class="pulse"></span>
-          <span data-i18n="eyebrow">ملف شخصي • تعلّم • ابتكار</span>
-        </div>
 
-        <p class="hero-kicker" data-i18n="hello">مرحبًا، أنا</p>
-        <h1>فايزة <span>أحمد</span><b class="hero-dot">.</b></h1>
-        <h2 data-i18n="heroTitle">أربط بين الإدارة والتقنية لصناعة أفكار ذات أثر.</h2>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
 
-        <p class="hero-description" data-i18n="heroDescription">
-          طالبة نظم المعلومات الإدارية، أستكشف كيف تتحول البيانات والأفكار والتقنيات الحديثة إلى حلول عملية وتجارب أفضل.
-        </p>
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span data-i18n="eyebrow">ملف شخصي • تعلّم • ابتكار</span>
+          </div>
 
-        <div class="hero-buttons">
-          <a class="button button-primary" href="#projects" data-i18n="viewWork">اكتشف أعمالي <span>↙</span></a>
-          <a class="button button-ghost" href="#contact" data-i18n="contactMe">تواصل معي</a>
-        </div>
+          <p class="hero-hello" data-i18n="hello">مرحبًا، أنا</p>
 
-        <div class="hero-meta">
-          <span data-i18n="based">نظم المعلومات الإدارية</span>
-          <span class="meta-line"></span>
-          <span data-i18n="openTo">فضول دائم للتعلّم والتعاون</span>
-        </div>
-      </div>
+          <h1 class="hero-name">فايزة أحمد<span>.</span></h1>
 
-      <div class="hero-art" aria-label="Abstract geometric artwork">
-        <div class="art-grid"></div>
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="orb-core"><span>FA</span><small>IDEAS IN MOTION</small></div>
-        <div class="art-square square-one"></div>
-        <div class="art-square square-two"></div>
-        <div class="art-cross cross-one">+</div>
-        <div class="art-cross cross-two">+</div>
-        <div class="art-label label-top">THINK / 01</div>
-        <div class="art-label label-bottom">CREATE / 02</div>
-        <div class="art-number">01—04</div>
-      </div>
+          <h2 class="hero-title" data-i18n="heroTitle">
+            أربط بين الإدارة والتقنية لصناعة أفكار ذات أثر.
+          </h2>
 
-      <a class="scroll-cue" href="#about"><span></span><small data-i18n="scroll">مرّر للاستكشاف</small></a>
-    </section>
-
-    <section class="intro-band">
-      <div class="marquee-track" aria-hidden="true">
-        <span>MANAGEMENT</span><b>✳</b>
-        <span>TECHNOLOGY</span><b>✳</b>
-        <span>INNOVATION</span><b>✳</b>
-        <span>DATA</span><b>✳</b>
-        <span>MANAGEMENT</span><b>✳</b>
-        <span>TECHNOLOGY</span><b>✳</b>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="content-section section-wrap" id="about">
-      <div class="section-heading">
-        <span class="section-index">01 / ABOUT</span>
-        <h2 data-i18n="aboutTitle">نبذة <em>عني</em></h2>
-      </div>
-
-      <div class="about-layout">
-        <div class="about-lead">
-          <span class="quote-mark">“</span>
-          <h3 data-i18n="aboutLead">أؤمن أن أفضل الحلول تبدأ بسؤال جيد، وتنمو بالمعرفة والتجربة.</h3>
-        </div>
-
-        <div class="about-body">
-          <p data-i18n="aboutText">
-            أدرس نظم المعلومات الإدارية، ويهمني فهم العلاقة بين احتياجات الأعمال والإمكانات التقنية. أعمل على تطوير مهاراتي في تحليل البيانات، والذكاء الاصطناعي، وتصميم الأنظمة، وإدارة المبادرات؛ وأحب تحويل الأفكار إلى نماذج ومشاريع قابلة للتطوير.
+          <p class="hero-description" data-i18n="heroDescription">
+            طالبة نظم المعلومات الإدارية، أستكشف كيف تتحول البيانات والأفكار والتقنيات الحديثة إلى حلول عملية وتجارب أفضل.
           </p>
 
-          <div class="about-tags">
-            <span data-i18n="tagCurious">فضول معرفي</span>
-            <span data-i18n="tagBuild">تعلّم بالتطبيق</span>
-            <span data-i18n="tagImpact">صناعة الأثر</span>
+          <div class="hero-buttons">
+            <a href="#projects" class="button button-dark" data-i18n="viewWork">
+              اكتشف أعمالي
+            </a>
+            <a href="#contact" class="button button-outline" data-i18n="contactMe">
+              تواصل معي
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span><span class="meta-icon">✳</span> <span data-i18n="based">نظم المعلومات الإدارية</span></span>
+            <span><span class="meta-icon">↗</span> <span data-i18n="openTo">فضول دائم للتعلّم والتعاون</span></span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-art">
+            <div class="art-topline">
+              <span>PORTFOLIO</span>
+              <span>2026</span>
+            </div>
+
+            <div class="art-center">
+              <span class="art-circle circle-one"></span>
+              <span class="art-circle circle-two"></span>
+              <span class="art-monogram">FA</span>
+            </div>
+
+            <div class="art-bottom">
+              <span>MANAGEMENT</span>
+              <span>TECHNOLOGY</span>
+              <span>INNOVATION</span>
+            </div>
+          </div>
+
+          <div class="hero-visual-caption">
+            <span class="caption-line"></span>
+            <span data-i18n="scroll">مرّر للاستكشاف</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="intro-band">
+      <div class="marquee-track">
+        <span>MANAGEMENT</span><i>✳</i>
+        <span>TECHNOLOGY</span><i>✳</i>
+        <span>INNOVATION</span><i>✳</i>
+        <span>DATA</span><i>✳</i>
+        <span>MANAGEMENT</span><i>✳</i>
+        <span>TECHNOLOGY</span><i>✳</i>
+        <span>INNOVATION</span><i>✳</i>
+        <span>DATA</span><i>✳</i>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-index">01 / ABOUT</span>
+          <h2 data-i18n="aboutTitle">نبذة <em>عني</em></h2>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-lead">
+            <span class="quote-mark">“</span>
+            <h3 data-i18n="aboutLead">
+              أؤمن أن أفضل الحلول تبدأ بسؤال جيد، وتنمو بالمعرفة والتجربة.
+            </h3>
+          </div>
+
+          <div class="about-details">
+            <p data-i18n="aboutText">
+              أدرس نظم المعلومات الإدارية، ويهمني فهم العلاقة بين احتياجات الأعمال والإمكانات التقنية. أعمل على تطوير مهاراتي في تحليل البيانات، والذكاء الاصطناعي، وتصميم الأنظمة، وإدارة المبادرات؛ وأحب تحويل الأفكار إلى نماذج ومشاريع قابلة للتطوير.
+            </p>
+
+            <div class="about-tags">
+              <span data-i18n="tagCurious">فضول معرفي</span>
+              <span data-i18n="tagBuild">تعلّم بالتطبيق</span>
+              <span data-i18n="tagImpact">صناعة الأثر</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOCUS -->
-    <section class="content-section section-wrap" id="focus">
-      <div class="section-heading">
-        <span class="section-index">02 / FOCUS AREAS</span>
-        <h2 data-i18n="focusTitle">مجالات <em>اهتمامي</em></h2>
-      </div>
+    <!-- Focus -->
+    <section class="section section-soft" id="focus">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-index">02 / INTERESTS</span>
+          <h2 data-i18n="focusTitle">مجالات <em>اهتمامي</em></h2>
+        </div>
 
-      <div class="focus-grid">
-        <article class="focus-card">
-          <span class="card-no">01</span>
-          <div class="focus-icon">⌁</div>
-          <h3 data-i18n="focusData">تحليل البيانات</h3>
-          <p data-i18n="focusDataText">استخلاص الرؤى من البيانات وتحويلها إلى معلومات تدعم اتخاذ القرار.</p>
-          <span class="card-arrow">↗</span>
-        </article>
+        <div class="focus-grid">
 
-        <article class="focus-card featured">
-          <span class="card-no">02</span>
-          <div class="focus-icon">✳</div>
-          <h3 data-i18n="focusAI">الذكاء الاصطناعي</h3>
-          <p data-i18n="focusAIText">استكشاف تطبيقات الذكاء الاصطناعي في الأعمال والتعلّم وتطوير الحلول.</p>
-          <span class="card-arrow">↗</span>
-        </article>
+          <article class="focus-card">
+            <span class="focus-number">01</span>
+            <div class="focus-symbol">⌁</div>
+            <h3 data-i18n="focusData">تحليل البيانات</h3>
+            <p data-i18n="focusDataText">استخلاص الرؤى من البيانات وتحويلها إلى معلومات تدعم اتخاذ القرار.</p>
+          </article>
 
-        <article class="focus-card">
-          <span class="card-no">03</span>
-          <div class="focus-icon">▦</div>
-          <h3 data-i18n="focusSystems">تطوير الأنظمة</h3>
-          <p data-i18n="focusSystemsText">فهم الأنظمة الرقمية وتجربة المستخدم وتبسيط الإجراءات.</p>
-          <span class="card-arrow">↗</span>
-        </article>
+          <article class="focus-card">
+            <span class="focus-number">02</span>
+            <div class="focus-symbol">✳</div>
+            <h3 data-i18n="focusAI">الذكاء الاصطناعي</h3>
+            <p data-i18n="focusAIText">استكشاف تطبيقات الذكاء الاصطناعي في الأعمال والتعلّم وتطوير الحلول.</p>
+          </article>
 
-        <article class="focus-card">
-          <span class="card-no">04</span>
-          <div class="focus-icon">◈</div>
-          <h3 data-i18n="focusInnovation">الابتكار والإدارة</h3>
-          <p data-i18n="focusInnovationText">تنظيم الأفكار والمبادرات والعمل على تحويلها إلى مشاريع ذات قيمة.</p>
-          <span class="card-arrow">↗</span>
-        </article>
-      </div>
-    </section>
+          <article class="focus-card">
+            <span class="focus-number">03</span>
+            <div class="focus-symbol">⌘</div>
+            <h3 data-i18n="focusSystems">تطوير الأنظمة</h3>
+            <p data-i18n="focusSystemsText">فهم الأنظمة الرقمية وتجربة المستخدم وتبسيط الإجراءات.</p>
+          </article>
 
-    <!-- PROJECTS -->
-    <section class="content-section section-wrap" id="projects">
-      <div class="section-heading">
-        <span class="section-index">03 / SELECTED WORK</span>
-        <h2 data-i18n="projectsTitle">مشاريع <em>ومبادرات</em></h2>
-      </div>
+          <article class="focus-card">
+            <span class="focus-number">04</span>
+            <div class="focus-symbol">◇</div>
+            <h3 data-i18n="focusInnovation">الابتكار والإدارة</h3>
+            <p data-i18n="focusInnovationText">تنظيم الأفكار والمبادرات والعمل على تحويلها إلى مشاريع ذات قيمة.</p>
+          </article>
 
-      <p class="section-intro" data-i18n="projectsIntro">
-        مساحة لعرض التجارب والأفكار التي أعمل عليها وأطوّرها. بعض الأعمال نماذج أولية أو مشاريع قيد التطوير.
-      </p>
-
-      <div class="projects-grid">
-        <!-- CLUB -->
-        <article class="project-card project-large">
-          <a class="project-image-link" href="https://fzfz1425-web.github.io/nadi-riadat-waliabtikar/" target="_blank" rel="noopener" aria-label="زيارة موقع نادي الابتكار وريادة الأعمال">
-            <img class="project-screenshot" src="./IMG_2165.png" alt="لقطة شاشة لموقع نادي الابتكار وريادة الأعمال" loading="lazy">
-            <span class="project-image-overlay">VIEW WEBSITE ↗</span>
-          </a>
-
-          <div class="project-info">
-            <div class="project-type" data-i18n="projectInitiative">مبادرة طلابية</div>
-            <h3 data-i18n="clubName">نادي الابتكار وريادة الأعمال</h3>
-            <p data-i18n="clubDesc">مبادرة جامعية تهدف إلى تنمية الأفكار، وبناء المهارات، وفتح مسارات للمشاركة والتعاون للطلاب عن بُعد.</p>
-            <a href="https://fzfz1425-web.github.io/nadi-riadat-waliabtikar/" target="_blank" rel="noopener" class="text-link">
-              <span data-i18n="visitProject">زيارة المشروع</span> ↗
-            </a>
-          </div>
-        </article>
-
-        <!-- SMART UNI STORE -->
-        <article class="project-card">
-          <a class="project-image-link" href="https://fzfz1425-web.github.io/smart-uni-store/" target="_blank" rel="noopener" aria-label="زيارة متجر الجامعة الذكي">
-            <img class="project-screenshot" src="./IMG_2163.png" alt="لقطة شاشة لمتجر الجامعة الذكي" loading="lazy">
-            <span class="project-image-overlay">VIEW WEBSITE ↗</span>
-          </a>
-
-          <div class="project-info">
-            <div class="project-type" data-i18n="projectPrototype">نموذج واجهة رقمية</div>
-            <h3 data-i18n="storeName">Smart Uni Store</h3>
-            <p data-i18n="storeDesc">تصور لمتجر جامعي رقمي يسهّل استكشاف المنتجات والباقات وتجربة التسوق.</p>
-            <a href="https://fzfz1425-web.github.io/smart-uni-store/" target="_blank" rel="noopener" class="text-link">
-              <span data-i18n="visitProject">زيارة المشروع</span> ↗
-            </a>
-          </div>
-        </article>
-
-        <!-- DAR AL-HADAYA -->
-        <article class="project-card">
-          <a class="project-image-link" href="https://fzfz1425-web.github.io/Daafa-is-available/" target="_blank" rel="noopener" aria-label="زيارة دار الهدايا الفنية">
-            <img class="project-screenshot" src="./IMG_2164.png" alt="لقطة شاشة لموقع دار الهدايا الفنية" loading="lazy">
-            <span class="project-image-overlay">VIEW WEBSITE ↗</span>
-          </a>
-
-          <div class="project-info">
-            <div class="project-type" data-i18n="projectShowcase">موقع تعريفي</div>
-            <h3 data-i18n="giftsName">دار الهدايا الفنية</h3>
-            <p data-i18n="giftsDesc">واجهة عرض رقمية لمنتجات فنية وهدايا مصنوعة بعناية، مع تجربة تواصل مباشرة.</p>
-            <a href="https://fzfz1425-web.github.io/Daafa-is-available/" target="_blank" rel="noopener" class="text-link">
-              <span data-i18n="visitProject">زيارة المشروع</span> ↗
-            </a>
-          </div>
-        </article>
+        </div>
       </div>
     </section>
 
-    <!-- CERTIFICATES -->
-    <section class="content-section section-wrap" id="certificates">
-      <div class="section-heading">
-        <span class="section-index">04 / LEARNING LOG</span>
-        <h2 data-i18n="certTitle">رحلة <em>التعلّم</em></h2>
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-index">03 / SELECTED WORK</span>
+          <h2 data-i18n="projectsTitle">مشاريع <em>ومبادرات</em></h2>
+          <p class="section-intro" data-i18n="projectsIntro">
+            مساحة لعرض التجارب والأفكار التي أعمل عليها وأطوّرها. بعض الأعمال نماذج أولية أو مشاريع قيد التطوير.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <a class="project-image-link"
+               href="https://fzfz1425-web.github.io/nadi-riadat-waliabtikar/"
+               target="_blank" rel="noopener">
+              <img class="project-screenshot" src="./IMG_2165.png"
+                   alt="نادي الابتكار وريادة الأعمال">
+              <span class="project-overlay" data-i18n="viewWebsite">VIEW WEBSITE ↗</span>
+            </a>
+
+            <div class="project-info">
+              <div class="project-topline">
+                <span class="project-category" data-i18n="projectInitiative">مبادرة طلابية</span>
+                <span class="project-number">01</span>
+              </div>
+              <h3 data-i18n="clubName">نادي الابتكار وريادة الأعمال</h3>
+              <p data-i18n="clubDesc">مبادرة جامعية تهدف إلى تنمية الأفكار، وبناء المهارات، وفتح مسارات للمشاركة والتعاون للطلاب عن بُعد.</p>
+              <a class="text-link" href="https://fzfz1425-web.github.io/nadi-riadat-waliabtikar/"
+                 target="_blank" rel="noopener">
+                <span data-i18n="visitProject">زيارة المشروع</span> ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-image-link"
+               href="https://fzfz1425-web.github.io/smart-uni-store/"
+               target="_blank" rel="noopener">
+              <img class="project-screenshot" src="./IMG_2163.png"
+                   alt="Smart Uni Store">
+              <span class="project-overlay" data-i18n="viewWebsite">VIEW WEBSITE ↗</span>
+            </a>
+
+            <div class="project-info">
+              <div class="project-topline">
+                <span class="project-category" data-i18n="projectPrototype">نموذج واجهة رقمية</span>
+                <span class="project-number">02</span>
+              </div>
+              <h3 data-i18n="storeName">Smart Uni Store</h3>
+              <p data-i18n="storeDesc">تصور لمتجر جامعي رقمي يسهّل استكشاف المنتجات والباقات وتجربة التسوق.</p>
+              <a class="text-link" href="https://fzfz1425-web.github.io/smart-uni-store/"
+                 target="_blank" rel="noopener">
+                <span data-i18n="visitProject">زيارة المشروع</span> ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-image-link"
+               href="https://fzfz1425-web.github.io/Daafa-is-available/"
+               target="_blank" rel="noopener">
+              <img class="project-screenshot" src="./IMG_2164.png"
+                   alt="دار الهدايا الفنية">
+              <span class="project-overlay" data-i18n="viewWebsite">VIEW WEBSITE ↗</span>
+            </a>
+
+            <div class="project-info">
+              <div class="project-topline">
+                <span class="project-category" data-i18n="projectShowcase">موقع تعريفي</span>
+                <span class="project-number">03</span>
+              </div>
+              <h3 data-i18n="giftsName">دار الهدايا الفنية</h3>
+              <p data-i18n="giftsDesc">واجهة عرض رقمية لمنتجات فنية وهدايا مصنوعة بعناية، مع تجربة تواصل مباشرة.</p>
+              <a class="text-link" href="https://fzfz1425-web.github.io/Daafa-is-available/"
+                 target="_blank" rel="noopener">
+                <span data-i18n="visitProject">زيارة المشروع</span> ↗
+              </a>
+            </div>
+          </article>
+
+        </div>
       </div>
+    </section>
 
-      <p class="section-intro" data-i18n="certIntro">
-        18 شهادة توثق رحلتي في التقنية والبيانات والإدارة والابتكار.
-      </p>
-
-      <div class="certificate-categories">
+    <!-- Certificates -->
+    <section class="section section-soft" id="certificates">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-index">04 / CERTIFICATES</span>
+          <h2 data-i18n="certTitle">رحلة <em>التعلّم</em></h2>
+          <p class="section-intro" data-i18n="certIntro">
+            18 شهادة توثق رحلتي في التقنية والبيانات والإدارة والابتكار.
+          </p>
+        </div>
 
         <!-- DATA -->
         <div class="certificate-group">
-          <h3 data-i18n="dataCategory">📊 DATA — البيانات وتحليلها <span>06</span></h3>
+          <div class="certificate-group-heading">
+            <h3 data-i18n="dataCategory">DATA — البيانات وتحليلها</h3>
+            <span class="group-count">06</span>
+          </div>
+
           <div class="certificate-grid">
-            <a href="./DATA.pdf" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./IMG_2158.png" alt="شهادة تحليل البيانات في عصر الذكاء الاصطناعي" loading="lazy"></div>
-              <span class="certificate-name">تحليل البيانات في عصر الذكاء الاصطناعي</span>
+
+            <a class="certificate-card" href="./DATA.pdf" target="_blank">
+              <div class="certificate-image-frame"><img src="./IMG_2158.png" alt="شهادة تحليل البيانات في عصر الذكاء الاصطناعي"></div>
+              <span class="certificate-title" data-i18n="certData1">تحليل البيانات في عصر الذكاء الاصطناعي</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
             </a>
-            <a href="./DATA1.pdf" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./IMG_2157.png" alt="شهادة استخدام أدوات الذكاء الاصطناعي في البحث عن عمل" loading="lazy"></div>
-              <span class="certificate-name">استخدام أدوات الذكاء الاصطناعي في تعزيز مهارات البحث عن عمل</span>
+
+            <a class="certificate-card" href="./DATA1.pdf" target="_blank">
+              <div class="certificate-image-frame"><img src="./IMG_2157.png" alt="شهادة استخدام أدوات الذكاء الاصطناعي في تعزيز مهارات البحث عن عمل"></div>
+              <span class="certificate-title" data-i18n="certData2">استخدام أدوات الذكاء الاصطناعي في تعزيز مهارات البحث عن عمل</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
             </a>
-            <a href="./DATA2.pdf" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./IMG_2156.png" alt="شهادة حماية البيانات" loading="lazy"></div>
-              <span class="certificate-name">حماية البيانات</span>
+
+            <a class="certificate-card" href="./DATA2.pdf" target="_blank">
+              <div class="certificate-image-frame"><img src="./IMG_2156.png" alt="شهادة حماية البيانات"></div>
+              <span class="certificate-title" data-i18n="certData3">حماية البيانات</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
             </a>
-            <a href="./DATA3.pdf" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./IMG_2153.png" alt="شهادة استخدامات الذكاء الاصطناعي في تحليل القوائم المالية" loading="lazy"></div>
-              <span class="certificate-name">استخدامات الذكاء الاصطناعي في تحليل القوائم المالية</span>
+
+            <a class="certificate-card" href="./DATA3.pdf" target="_blank">
+              <div class="certificate-image-frame"><img src="./IMG_2153.png" alt="شهادة استخدامات الذكاء الاصطناعي في تحليل القوائم المالية"></div>
+              <span class="certificate-title" data-i18n="certData4">استخدامات الذكاء الاصطناعي في تحليل القوائم المالية</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
             </a>
-            <a href="./DATA4.pdf" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./IMG_2155.png" alt="شهادة معسكر تحليل البيانات الأول باستخدام Power BI" loading="lazy"></div>
-              <span class="certificate-name">معسكر تحليل البيانات الأول باستخدام Power BI</span>
+
+            <a class="certificate-card" href="./DATA4.pdf" target="_blank">
+              <div class="certificate-image-frame"><img src="./IMG_2155.png" alt="شهادة معسكر تحليل البيانات الأول باستخدام Power BI"></div>
+              <span class="certificate-title" data-i18n="certData5">معسكر تحليل البيانات الأول باستخدام Power BI</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
             </a>
-            <a href="./DATA5.pdf" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./IMG_2154.png" alt="شهادة إطلاق مشروعك المالي بالذكاء الاصطناعي" loading="lazy"></div>
-              <span class="certificate-name">إطلاق مشروعك المالي بالذكاء الاصطناعي</span>
+
+            <a class="certificate-card" href="./DATA5.pdf" target="_blank">
+              <div class="certificate-image-frame"><img src="./IMG_2154.png" alt="شهادة إطلاق مشروعك المالي بالذكاء الاصطناعي"></div>
+              <span class="certificate-title" data-i18n="certData6">إطلاق مشروعك المالي بالذكاء الاصطناعي</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
             </a>
+
           </div>
         </div>
 
-        <!-- BIZ -->
+        <!-- BUSINESS -->
         <div class="certificate-group">
-          <h3 data-i18n="bizCategory">💼 BIZ — الأعمال والإدارة <span>03</span></h3>
+          <div class="certificate-group-heading">
+            <h3 data-i18n="bizCategory">BIZ — الأعمال والإدارة</h3>
+            <span class="group-count">03</span>
+          </div>
+
           <div class="certificate-grid">
-            <a href="./BIZ.pdf" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./IMG_2161.png" alt="شهادة الذكاء الوجداني في سوق العمل" loading="lazy"></div>
-              <span class="certificate-name">الذكاء الوجداني في سوق العمل</span>
+
+            <a class="certificate-card" href="./BIZ.pdf" target="_blank">
+              <div class="certificate-image-frame"><img src="./IMG_2161.png" alt="شهادة الذكاء الوجداني في سوق العمل"></div>
+              <span class="certificate-title" data-i18n="certBiz1">الذكاء الوجداني في سوق العمل</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
             </a>
-            <a href="./BIZ1.pdf" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./IMG_2160.png" alt="شهادة مقدمة في الحوكمة وإدارة المخاطر والالتزام" loading="lazy"></div>
-              <span class="certificate-name">مقدمة في الحوكمة وإدارة المخاطر والالتزام</span>
+
+            <a class="certificate-card" href="./BIZ1.pdf" target="_blank">
+              <div class="certificate-image-frame"><img src="./IMG_2160.png" alt="شهادة مقدمة في الحوكمة وإدارة المخاطر والالتزام"></div>
+              <span class="certificate-title" data-i18n="certBiz2">مقدمة في الحوكمة وإدارة المخاطر والالتزام</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
             </a>
-            <a href="./BIZ2.pdf" target="_blank" rel="noopener">
-              <span class="certificate-file-icon">PDF</span>
-              <span class="certificate-name">المهارات الناعمة لسوق العمل</span>
+
+            <a class="certificate-card" href="./BIZ2.pdf" target="_blank">
+              <div class="certificate-file-icon">
+                <span class="pdf-icon">PDF</span>
+                <span data-i18n="filePreview">ملف الشهادة</span>
+              </div>
+              <span class="certificate-title" data-i18n="certBiz3">المهارات الناعمة لسوق العمل</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
             </a>
+
           </div>
         </div>
 
-        <!-- INNO -->
+        <!-- INNOVATION -->
         <div class="certificate-group">
-          <h3 data-i18n="innoCategory">💡 INNO — الابتكار وريادة الأعمال <span>04</span></h3>
+          <div class="certificate-group-heading">
+            <h3 data-i18n="innoCategory">INNO — الابتكار وريادة الأعمال</h3>
+            <span class="group-count">04</span>
+          </div>
+
           <div class="certificate-grid">
-            <a href="./INNO.pdf" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./IMG_2150.png" alt="شهادة شكر وتقدير لدعم الابتكار وريادة الأعمال" loading="lazy"></div>
-              <span class="certificate-name">شكر وتقدير لدعم الابتكار وريادة الأعمال</span>
+
+            <a class="certificate-card" href="./INNO.pdf" target="_blank">
+              <div class="certificate-image-frame"><img src="./IMG_2150.png" alt="شهادة شكر وتقدير لدعم الابتكار وريادة الأعمال"></div>
+              <span class="certificate-title" data-i18n="certInno1">شكر وتقدير لدعم الابتكار وريادة الأعمال</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
             </a>
-            <a href="./INNO1.pdf" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./IMG_2151.png" alt="شهادة اللقاء التعريفي الأول لريادة الأعمال والابتكار" loading="lazy"></div>
-              <span class="certificate-name">اللقاء التعريفي الأول لريادة الأعمال والابتكار</span>
+
+            <a class="certificate-card" href="./INNO1.pdf" target="_blank">
+              <div class="certificate-image-frame"><img src="./IMG_2151.png" alt="شهادة اللقاء التعريفي الأول لريادة الأعمال والابتكار"></div>
+              <span class="certificate-title" data-i18n="certInno2">اللقاء التعريفي الأول لريادة الأعمال والابتكار</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
             </a>
-            <a href="./INNO2.pdf" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./IMG_2152.png" alt="شهادة قيادة الابتكار المؤسسي" loading="lazy"></div>
-              <span class="certificate-name">قيادة الابتكار المؤسسي وفق متطلبات المواصفات الدولية ومعايير هيئة الحكومة الرقمية</span>
+
+            <a class="certificate-card" href="./INNO2.pdf" target="_blank">
+              <div class="certificate-image-frame"><img src="./IMG_2152.png" alt="شهادة قيادة الابتكار المؤسسي"></div>
+              <span class="certificate-title" data-i18n="certInno3">قيادة الابتكار المؤسسي وفق متطلبات المواصفات الدولية ومعايير هيئة الحكومة الرقمية</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
             </a>
-            <a href="./INNO3.pdf" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./IMG_2149.png" alt="شهادة شرح معيار إدارة الابتكار ISO 56001" loading="lazy"></div>
-              <span class="certificate-name">شرح معيار إدارة الابتكار ISO 56001 وأهم مواصفات عائلة الابتكار ISO 56000</span>
+
+            <a class="certificate-card" href="./INNO3.pdf" target="_blank">
+              <div class="certificate-image-frame"><img src="./IMG_2149.png" alt="شهادة شرح معيار إدارة الابتكار ISO 56001"></div>
+              <span class="certificate-title" data-i18n="certInno4">شرح معيار إدارة الابتكار ISO 56001 وأهم مواصفات عائلة الابتكار ISO 56000</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
             </a>
+
           </div>
         </div>
 
         <!-- TECH -->
         <div class="certificate-group">
-          <h3 data-i18n="techCategory">💻 TECH — التقنية والبرمجة <span>04</span></h3>
-          <div class="certificate-grid">
-            <a href="./TECH.pdf" target="_blank" rel="noopener">
-              <span class="certificate-file-icon">PDF</span>
-              <span class="certificate-name">الحاسب الآلي والبرامج التطبيقية</span>
-            </a>
-            <a href="./TECH.png" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./TECH.png" alt="شهادة مقدمة في لغة البايثون للمهندسين" loading="lazy"></div>
-              <span class="certificate-name">مقدمة في لغة البايثون للمهندسين</span>
-            </a>
-            <a href="./TECH.JPG" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./TECH.JPG" alt="شهادة ورشة تحليل هجمات التصيّد وتتبّع التهديدات" loading="lazy"></div>
-              <span class="certificate-name">ورشة تحليل هجمات التصيّد وتتبّع التهديدات</span>
-            </a>
-            <a href="./TECH.jpg" target="_blank" rel="noopener">
-              <div class="certificate-image-frame"><img class="certificate-thumb" src="./TECH.jpg" alt="شهادة مقدمة في البرمجة باستخدام بايثون CS50P" loading="lazy"></div>
-              <span class="certificate-name">مقدمة في البرمجة باستخدام بايثون CS50P</span>
-            </a>
+          <div class="certificate-group-heading">
+            <h3 data-i18n="techCategory">TECH — التقنية والبرمجة</h3>
+            <span class="group-count">04</span>
           </div>
-        </div>
 
-        <!-- SAFE -->
-        <div class="certificate-group">
-          <h3 data-i18n="safeCategory">🛡️ SAFE — الأمن والسلامة <span>01</span></h3>
           <div class="certificate-grid">
-            <a href="./SAFE.pdf" target="_blank" rel="noopener" class="certificate-safe">
-              <div class="certificate-image-frame certificate-safe-frame">
-                <img class="certificate-thumb" src="./IMG_2148.png" alt="شهادة سلامة المرضى: أولوية مطلقة ومسؤولية مشتركة" loading="lazy">
+
+            <a class="certificate-card" href="./TECH.pdf" target="_blank">
+              <div class="certificate-file-icon">
+                <span class="pdf-icon">PDF</span>
+                <span data-i18n="filePreview">ملف الشهادة</span>
               </div>
-              <span class="certificate-name">سلامة المرضى: أولوية مطلقة ومسؤولية مشتركة</span>
+              <span class="certificate-title" data-i18n="certTech1">الحاسب الآلي والبرامج التطبيقية</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
             </a>
+
+            <a class="certificate-card" href="./TECH.png" target="_blank">
+              <div class="certificate-image-frame"><img src="./TECH.png" alt="شهادة مقدمة في لغة البايثون للمهندسين"></div>
+              <span class="certificate-title" data-i18n="certTech2">مقدمة في لغة البايثون للمهندسين</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
+            </a>
+
+            <a class="certificate-card" href="./TECH.JPG" target="_blank">
+              <div class="certificate-image-frame"><img src="./TECH.JPG" alt="شهادة ورشة تحليل هجمات التصيد وتتبع التهديدات"></div>
+              <span class="certificate-title" data-i18n="certTech3">ورشة تحليل هجمات التصيّد وتتبّع التهديدات</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
+            </a>
+
+            <a class="certificate-card" href="./TECH.jpg" target="_blank">
+              <div class="certificate-image-frame"><img src="./TECH.jpg" alt="شهادة مقدمة في البرمجة باستخدام بايثون CS50P"></div>
+              <span class="certificate-title" data-i18n="certTech4">مقدمة في البرمجة باستخدام بايثون CS50P</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- SAFETY -->
+        <div class="certificate-group">
+          <div class="certificate-group-heading">
+            <h3 data-i18n="safeCategory">SAFE — الأمن والسلامة</h3>
+            <span class="group-count">01</span>
+          </div>
+
+          <div class="certificate-grid certificate-grid-single">
+
+            <a class="certificate-card certificate-safe" href="./SAFE.pdf" target="_blank">
+              <div class="certificate-image-frame certificate-safe-frame">
+                <img src="./IMG_2148.png" alt="شهادة سلامة المرضى: أولوية مطلقة ومسؤولية مشتركة">
+              </div>
+              <span class="certificate-title" data-i18n="certSafe1">سلامة المرضى: أولوية مطلقة ومسؤولية مشتركة</span>
+              <span class="certificate-open" data-i18n="openCertificate">عرض الشهادة ↗</span>
+            </a>
+
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="contact-section" id="contact">
-      <div class="section-wrap contact-inner">
-        <span class="section-index">05 / SAY HELLO</span>
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-layout">
 
-        <div class="contact-layout">
-          <div>
-            <h2 data-i18n="contactTitle">لنبنِ شيئًا<br><em>له معنى.</em></h2>
-            <p data-i18n="contactText">يسعدني التواصل حول الأفكار والمشاريع والتعلّم والتعاون.</p>
-          </div>
-
-          <div class="contact-links">
-            <a href="mailto:Fzfz1425@gmail.com">
-              <span>EMAIL</span>
-              <b>Fzfz1425@gmail.com</b>
-              <i>↗</i>
-            </a>
-            <a href="https://github.com/fzfz1425-web" target="_blank" rel="noopener">
-              <span>GITHUB</span>
-              <b>fzfz1425-web</b>
-              <i>↗</i>
-            </a>
-          </div>
+        <div>
+          <span class="section-index">05 / CONTACT</span>
+          <h2 data-i18n="contactTitle">لنبنِ شيئًا<br><em>له معنى.</em></h2>
+          <p data-i18n="contactText">يسعدني التواصل حول الأفكار والمشاريع والتعلّم والتعاون.</p>
         </div>
 
-        <footer>
-          <span>© <span id="year"></span> FAIZA AHMED</span>
-          <span data-i18n="footer">صُمّم بشغف للتعلّم وصناعة الأثر.</span>
-          <a href="#home" data-i18n="backTop">العودة للأعلى ↑</a>
-        </footer>
+        <div class="contact-links">
+          <a href="mailto:Fzfz1425@gmail.com" class="contact-link">
+            <span class="contact-label">EMAIL</span>
+            <span>Fzfz1425@gmail.com</span>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <a href="https://github.com/fzfz1425-web" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-label">GITHUB</span>
+            <span>fzfz1425-web</span>
+            <span class="contact-arrow">↗</span>
+          </a>
+        </div>
+
       </div>
     </section>
+
   </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <span>© <span id="year"></span> FA.</span>
+      <span data-i18n="footer">صُمّم بشغف للتعلّم وصناعة الأثر.</span>
+      <a href="#home" data-i18n="backTop">العودة للأعلى ↑</a>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
